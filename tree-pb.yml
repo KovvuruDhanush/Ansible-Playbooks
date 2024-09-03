@@ -1,0 +1,18 @@
+---
+- name: Install tree package on all nodes
+  hosts: all
+  become: true
+  tasks:
+    - name: Install tree package
+      yum: 
+        name: tree
+        state: present
+
+# To check for syntax errors
+# ansible-playbook tree-pb.yml --syntax-check
+
+# To perform a dry run (to verify without making changes)
+# ansible-playbook tree-pb.yml --check
+
+# To execute the playbook
+# ansible-playbook tree-pb.yml

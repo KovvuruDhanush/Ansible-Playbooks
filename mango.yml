@@ -1,0 +1,13 @@
+fruits:
+  name: mango
+  color: yellow
+  taste: sweet
+  origin:
+    country: India
+    region: Andhra
+  nutrients:
+    vitamins: -A
+      -B
+      -C
+    Minerals: -mg
+      -calciucm
